@@ -10,7 +10,16 @@ import AccessTimeRoundedIcon from '@mui/icons-material/AccessTimeRounded';
 const red = '#2168d5';
 const theme = createTheme({ palette: { primary: { main: red }, text: { primary: '#18263c', secondary: '#68788f' }, background: { default: '#fff', paper: '#fff' } }, typography: { fontFamily: 'Manrope, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', button: { textTransform: 'none', fontWeight: 700 } }, shape: { borderRadius: 18 } });
 const routes = [['/', 'Home'], ['/about', 'About'], ['/features', 'Features'], ['/contact', 'Contact'], ['/plans', 'Plans and Pricing']];
-const legal = [['/privacy_policy', 'Privacy Policy'], ['/terms', 'Terms of User'], ['/community_guidlines', 'Community Guidelines'], ['/delete_account', 'Delete Account'], ['/cancelation', 'Cancelation'], ['/refund', 'Refund'], ['/plans', 'Pricing and Plans'], ['/contact', 'Contact Us']];
+const legal = [
+  ['/privacy_policy', 'Privacy Policy'],
+  ['/terms', 'Terms of Use'],
+  ['/community_guidlines', 'Community Guidelines'],
+  ['/delete_account', 'Delete Account'],
+  ['/cancelation', 'Cancellation Policy'],
+  ['/refund', 'Refund Policy'],
+  ['/plans', 'Pricing and Plans'],
+  ['/contact', 'Contact Us'],
+];
 const normalized = (path: string) => path.replace(/\/$/, '') || '/';
 
 function Header() {
